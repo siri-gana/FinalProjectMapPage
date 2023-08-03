@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		091DB5D22A7B593400097C35 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091DB5D12A7B593400097C35 /* Extensions.swift */; };
+		092951F62A7C2C710065E67A /* MapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092951F52A7C2C710065E67A /* MapLocation.swift */; };
 		094AA4632A79AD1B0050FE98 /* FinalProjectMapPageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AA4622A79AD1B0050FE98 /* FinalProjectMapPageApp.swift */; };
 		094AA4652A79AD1B0050FE98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AA4642A79AD1B0050FE98 /* ContentView.swift */; };
 		094AA4672A79AD200050FE98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094AA4662A79AD200050FE98 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		091DB5D12A7B593400097C35 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		092951F52A7C2C710065E67A /* MapLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocation.swift; sourceTree = "<group>"; };
 		094AA45F2A79AD1B0050FE98 /* FinalProjectMapPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectMapPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		094AA4622A79AD1B0050FE98 /* FinalProjectMapPageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectMapPageApp.swift; sourceTree = "<group>"; };
 		094AA4642A79AD1B0050FE98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 		094AA4562A79AD1B0050FE98 = {
 			isa = PBXGroup;
 			children = (
+				092951F52A7C2C710065E67A /* MapLocation.swift */,
 				094AA4612A79AD1B0050FE98 /* FinalProjectMapPage */,
 				094AA4602A79AD1B0050FE98 /* Products */,
 			);
@@ -143,6 +146,7 @@
 				094AA4652A79AD1B0050FE98 /* ContentView.swift in Sources */,
 				091DB5D22A7B593400097C35 /* Extensions.swift in Sources */,
 				094AA4632A79AD1B0050FE98 /* FinalProjectMapPageApp.swift in Sources */,
+				092951F62A7C2C710065E67A /* MapLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
