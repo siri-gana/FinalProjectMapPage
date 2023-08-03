@@ -8,35 +8,58 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var volunteering1 = "RedCross Volunteering"
-    @State private var volunteering2 = "Medical Justice Alliance"
+    @State private var volunteering1 = ""
+    @State private var volunteering2 = ""
+    @State private var volunteering3 = ""
+    
+    let label1textColor = UIColor.deepBlue
     
     var body: some View {
         ZStack {
-            Color(.brown) //will need to change color later to hexcode #E9E9E9 prediced by group members
+            Color(UIColor.sageGreen)
                 .ignoresSafeArea()
             VStack {
-                Text("Opportunity Map") //will need to change text to hexcode #939FA7
+                Text("Opportunity Map")
+                    .foregroundColor(Color.white)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
-                VStack {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Placeholder")/*@END_MENU_TOKEN@*///insert map here
+                ZStack {
+                    VStack {
+                        Image("map1")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    .padding()
+                    .background(.white)
+                    .cornerRadius(15)
+                    .padding()
+                    .font(.footnote)
+                    
                 }
-                .padding()
-                .background(.white)
-                .cornerRadius(15)
-                .padding()
-                .font(.footnote)
                 Text("Opportunity List") //will need to change text to hexcode #939FA7
+                    .foregroundColor(Color.white)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                 Text(volunteering1)
-                Button("random fact"){
+                Button("- Red Cross Volunteering"){
                     volunteering1 = "my favorite show of ALL time is avatar the last airbender!!"
-                    
                 }
+                .foregroundColor(Color.black)
+                
+                Text(volunteering2)
+                Button("- Medical Justice Alliance"){
+                    volunteering2 = "yuh"
+                }
+                .foregroundColor(Color.black)
+                
+                Text(volunteering3)
+                Button("- Baylor Scott and White Health"){
+                    volunteering2 = "yuh"
+                }
+                .foregroundColor(Color.black)
+                
             }
             
         }
