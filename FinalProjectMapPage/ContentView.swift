@@ -42,23 +42,23 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
-                Text(volunteering1)
-                Button("- Red Cross Volunteering"){
-                    volunteering1 = "my favorite show of ALL time is avatar the last airbender!!"
-                }
-                .foregroundColor(Color.black)
+                    .padding()
                 
-                Text(volunteering2)
-                Button("- Medical Justice Alliance"){
-                    volunteering2 = "yuh"
-                }
-                .foregroundColor(Color.black)
+                Link("- Red Cross Volunteering", destination: URL(string: "https://www.redcross.org/volunteer/become-a-volunteer.html#step1")!)
+                          .foregroundColor(Color.black)
                 
-                Text(volunteering3)
-                Button("- Baylor Scott and White Health"){
-                    volunteering2 = "yuh"
-                }
-                .foregroundColor(Color.black)
+                Link("- Medical Justice Alliance", destination: URL(string: "https://airtable.com/shrJ5dGqTBw1S7Mnn")!)
+                          .foregroundColor(Color.black)
+                
+                Link("- Baylor Scott and White", destination: URL(string: "https://www.bswhealth.com/get-involved/become-a-volunteer")!)
+                          .foregroundColor(Color.black)
+                
+                Link("- LifeLong Medical Care", destination: URL(string: "https://lifelongmedical.org/volunteer/")!)
+                          .foregroundColor(Color.black)
+                
+                Link("- Health Equity Ambassadors", destination: URL(string: "https://www.cancer.org/about-us/what-we-do/multicultural/hea.html")!)
+                          .foregroundColor(Color.black)
+                
                 
             }
             
